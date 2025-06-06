@@ -5,11 +5,11 @@ from math import ceil
 
 class ReposData:
 
-    def __init__(self, owner, username):
+    def __init__(self, owner, username, token):
         self.owner = owner
         self.username = username
         self.base_url = 'https://api.github.com'
-        self.token = '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'
+        self.token = token
         self.headers = {'Authorization': 'Bearer ' + self.token,
            "Content-Type": "application/json",
            'X-GitHub-Api-Version': '2022-11-28'}
